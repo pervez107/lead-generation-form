@@ -15,7 +15,9 @@ A full-stack Lead Generation Form built with **React**, **Express**, **MySQL**, 
 
 /
 ├── client/ # React frontend (Vercel)
+
 ├── server/ # Express backend (Render)
+
 └── README.md # Project documentation
 
 ---
