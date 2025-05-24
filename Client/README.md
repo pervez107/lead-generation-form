@@ -1,12 +1,42 @@
-# React + Vite
+💻 Frontend Setup (React)
+📁 Folder: /client
+⚙️ Technologies Used
+>React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+>Bootstrap
 
-Currently, two official plugins are available:
+>React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+>Formik + Yup
 
-## Expanding the ESLint configuration
+>Axios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📦 Installation
+Navigate to the client folder:
+
+
+  >cd client
+>
+Install dependencies:
+
+  >npm install
+
+Run the app:
+
+>npm run dev
+
+App runs at: http://localhost:5173
+
+🌐Live frontend link:
+👉 https://lead-generation-form-x2en.vercel.app
+
+📌 Features
+User-friendly lead submission form
+
+Field validation with Yup & Formik
+
+Only allows @gmail.com emails
+
+Stores leads in a MySQL database
+
+Deployed frontend (Vercel) and backend (Render)
