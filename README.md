@@ -1,3 +1,4 @@
+
 # 📩 Lead Generation Form
 
 A full-stack Lead Generation Form built with **React**, **Express**, **MySQL**, and deployed using **Vercel** and **Render**.
@@ -13,14 +14,12 @@ A full-stack Lead Generation Form built with **React**, **Express**, **MySQL**, 
 
 ## 🗂️ Project Structure
 
-/
-├── client/ # React frontend (Vercel)
-
-├── server/ # Express backend (Render)
-
-└── README.md # Project documentation
-
----
+```
+/ 
+├── client/        # React frontend (deployed on Vercel)
+├── server/        # Express backend (deployed on Render)
+└── README.md      # Project documentation
+```
 
 ## 🚀 Tech Stack
 
@@ -54,77 +53,60 @@ A full-stack Lead Generation Form built with **React**, **Express**, **MySQL**, 
 
 git clone https://github.com/your-username/your-repo.git
 
-cd your-repo
+ :-cd your-repo
 
-2. Frontend Setup (client/)
+### 2. Frontend Setup (client/)
 
-cd client
-
-npm install
-
-npm run dev
+- cd client
+- npm install
+- npm run dev
 
 Runs on http://localhost:5173 by default.
 
-3. Backend Setup (server/)
+### 3. Backend Setup (server/)
    
-Create .env file inside server/ folder:
-env
+Create .env file inside server/ folder:-[env]
 
-PORT=5000
+- PORT=5000
+- DB_HOST=yamabiko.proxy.rlwy.net
+- DB_PORT=14223
+- DB_USER=root
+- DB_PASSWORD=rcRhXxICRRrQkbDOAQFuNvMAvldyddhm
+- DB_NAME=railway
 
-DB_HOST=yamabiko.proxy.rlwy.net
+## Then run:
 
-DB_PORT=14223
-
-DB_USER=root
-
-DB_PASSWORD=rcRhXxICRRrQkbDOAQFuNvMAvldyddhm
-
-DB_NAME=railway
-
-Then run:
-
-cd server
-
-npm install
-
-node index.js
+- cd server
+- npm install
+- node index.js
 
 Runs on http://localhost:5000 by default.
 
-🛠️ Deployment
-Frontend (Vercel)
-Push your client/ folder to GitHub.
+### 🛠️ Deployment
+## Frontend (Vercel)
 
-Connect to vercel.com.
+- Push your client/ folder to GitHub.
+- Connect to vercel.com.
+- Import project → Set root directory to client/.
 
-Import project → Set root directory to client/.
+     Done!
 
-Done!
+## Backend (Render)
+- Push your server/ folder to GitHub.
+- Go to render.com.
+- Create a new Web Service.
+## Set build & start command:
 
-Backend (Render)
-Push your server/ folder to GitHub.
+- Build Command: npm install
+- Start Command: node index.js
+- Add environment variables (from .env) in the Render dashboard.
+- Database (Railway)
+- Create a MySQL database at railway.app.
+- Use the external hostname/port for Render (not mysql.railway.internal).
 
-Go to render.com.
+## Add table:
 
-Create a new Web Service.
-
-Set build & start command:
-
-Build Command: npm install
-
-Start Command: node index.js
-
-Add environment variables (from .env) in the Render dashboard.
-
-Database (Railway)
-Create a MySQL database at railway.app.
-
-Use the external hostname/port for Render (not mysql.railway.internal).
-
-Add table:
-
+```sql
 CREATE TABLE leads (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255),
@@ -132,26 +114,26 @@ CREATE TABLE leads (
   company VARCHAR(255),
   message TEXT
 );
+```
 
-🧪 API Endpoint
-POST /api/leads
-Saves lead data to the database.
+## 🧪 API Endpoint
+- POST /api/leads
+- Saves lead data to the database.
 
-Example Request:
+### Example Request:
 
+```json
 {
   "name": "John Doe",
   "email": "john.doe@gmail.com",
   "company": "Tech Corp",
   "message": "Interested in your service."
 }
+```
 
-🙌 Author
-Built by [sk pervez ahmmed]
+# 🙌 Author
+### Built by [sk pervez ahmmed]
 
-📌 License
-This project is licensed under the MIT License.
-
----
-
-Let me know if you'd like this in a downloadable file or want help pushing it to GitHub.
+### 📌 License
+- This project is licensed under the MIT License.
+- Let me know if you'd like this in a downloadable file or want help pushing it to GitHub.
