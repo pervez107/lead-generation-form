@@ -36,7 +36,7 @@ A full-stack lead generation application that allows users to submit their name,
 git clone https://github.com/pervez107/lead-generation-form.git
 cd lead-generation-form
 
-2️⃣ Backend Setup
+###2️⃣ Backend Setup
 📂 Navigate to backend folder
 bash
 Copy
@@ -77,7 +77,7 @@ node index.js
 Backend runs at: http://localhost:5000
 
 
-3️⃣ Frontend Setup
+###3️⃣ Frontend Setup
 📂 Navigate to frontend folder
 bash
 Copy
