@@ -70,10 +70,15 @@ Create .env file inside server/ folder:
 env
 
 PORT=5000
+
 DB_HOST=yamabiko.proxy.rlwy.net
+
 DB_PORT=14223
+
 DB_USER=root
+
 DB_PASSWORD=rcRhXxICRRrQkbDOAQFuNvMAvldyddhm
+
 DB_NAME=railway
 
 Then run:
