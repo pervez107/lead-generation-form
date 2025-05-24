@@ -1,0 +1,10 @@
+.body-background{
+  background-image: url('/Email-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-shade{
+  background-color: rgba(0, 0, 0,0.5);
+  height: 100vh;
+}
