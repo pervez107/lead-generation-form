@@ -20,8 +20,19 @@ export function EmailForm(){
             email:yup.string().required('Email must Required').matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/,'Only @gmail.com emails are allowed')
         }),
         onSubmit:(Data)=>{
-            axios.post('http://localhost:5000/api/leads',Data);
-            alert('Email Send Successfully To Company');
+            axios.post('http://localhost:5000/api/leads',Data)
+            .then((response) => {
+      alert(response.data.message); // Show success message from backend
+      navigate('/'); // Redirect after success
+    })
+    .catch((error) => {
+        if (error.response && error.response.data && error.response.data.error) {
+            alert('Error: ' + error.response.data.error); // Show backend error
+        } else {
+            alert('An unexpected error occurred.');
+        }
+    });
+            
             navigate('/');
         }
     })
