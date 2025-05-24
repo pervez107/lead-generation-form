@@ -17,9 +17,12 @@
    ```bash
    cd server
 2.Install dependencies:
+
 npm install
 
 3.Create a .env file with your database credentials:
+
+
 PORT=5000
 DB_HOST=your_mysql_host         # e.g. containers-us-west-99.railway.app
 DB_USER=your_mysql_user         # e.g. root
@@ -27,6 +30,8 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=your_database_name      # e.g. railway
 
 4.Run the server:
+
+
 node index.js
 
 
@@ -45,12 +50,14 @@ POST /api/leads
 
 ##-Response:
 
+
 {
   "message": "Lead submitted successfully!"
 }
 
 
 🗄️ MySQL Table Schema
+
 
 CREATE TABLE leads (
   id INT AUTO_INCREMENT PRIMARY KEY,
