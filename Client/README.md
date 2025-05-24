@@ -27,8 +27,7 @@ Run the app:
 
 App runs at: http://localhost:5173
 
-🌐Live frontend link:
-👉 lead-generation-form-virid.vercel.app
+🌐 **Live Frontend Link**: 👉 [lead-generation-form-virid.vercel.app](https://lead-generation-form-virid.vercel.app)
 
 📌 Features
 User-friendly lead submission form
