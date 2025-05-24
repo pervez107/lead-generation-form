@@ -57,12 +57,15 @@ cd your-repo
 2. Frontend Setup (client/)
 
 cd client
+
 npm install
+
 npm run dev
 
 Runs on http://localhost:5173 by default.
 
 3. Backend Setup (server/)
+   
 Create .env file inside server/ folder:
 env
 
@@ -76,7 +79,9 @@ DB_NAME=railway
 Then run:
 
 cd server
+
 npm install
+
 node index.js
 
 Runs on http://localhost:5000 by default.
